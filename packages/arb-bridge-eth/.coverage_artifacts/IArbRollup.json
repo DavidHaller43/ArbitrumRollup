@@ -1,0 +1,69 @@
+{
+  "contractName": "IArbRollup",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_vmState",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_gracePeriodTicks",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_arbGasSpeedLimitPerTick",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_maxExecutionSteps",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint128",
+          "name": "_stakeRequirement",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "_stakeToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_challengeFactoryAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_globalInboxAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_extraConfig",
+          "type": "bytes"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

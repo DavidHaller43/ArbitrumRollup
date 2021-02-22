@@ -1,0 +1,29 @@
+{
+  "contractName": "IStaking",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "loser",
+          "type": "address"
+        }
+      ],
+      "name": "resolveChallenge",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

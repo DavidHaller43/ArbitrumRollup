@@ -1,0 +1,69 @@
+{
+  "contractName": "ChallengeUtils",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "INVALID_EXECUTION_TYPE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "INVALID_INBOX_TOP_TYPE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "VALID_CHILD_TYPE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "c__0x84104f58",
+          "type": "bytes32"
+        }
+      ],
+      "name": "coverage_0x84104f58",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x61011c610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060515760003560e01c80632e179be514605657806395312727146072578063a582a27814608e578063a697bcac1460b9575b600080fd5b605c60d5565b6040518082815260200191505060405180910390f35b607860da565b6040518082815260200191505060405180910390f35b60b76004803603602081101560a257600080fd5b810190808035906020019092919050505060df565b005b60bf60e2565b6040518082815260200191505060405180910390f35b600281565b600181565b50565b60008156fea265627a7a7231582073faa0b3da13b7bf4919b108009bd536bb3a0658e15df78847aac701b77ea45264736f6c63430005110032",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060515760003560e01c80632e179be514605657806395312727146072578063a582a27814608e578063a697bcac1460b9575b600080fd5b605c60d5565b6040518082815260200191505060405180910390f35b607860da565b6040518082815260200191505060405180910390f35b60b76004803603602081101560a257600080fd5b810190808035906020019092919050505060df565b005b60bf60e2565b6040518082815260200191505060405180910390f35b600281565b600181565b50565b60008156fea265627a7a7231582073faa0b3da13b7bf4919b108009bd536bb3a0658e15df78847aac701b77ea45264736f6c63430005110032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

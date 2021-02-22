@@ -1,0 +1,44 @@
+{
+  "contractName": "IBisectionChallenge",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_rollupAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_asserter",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "_challenger",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_challengePeriodTicks",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_challengeState",
+          "type": "bytes32"
+        }
+      ],
+      "name": "initializeBisection",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,121 @@
+{
+  "contractName": "IOneStepProof",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inboxAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "messagesAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "logsAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "proof",
+          "type": "bytes"
+        }
+      ],
+      "name": "executeStep",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "gas",
+          "type": "uint64"
+        },
+        {
+          "internalType": "bytes32[5]",
+          "name": "fields",
+          "type": "bytes32[5]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "inboxAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "messagesAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "logsAcc",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "proof",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_kind",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_blockNumber",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_sender",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_inboxSeqNum",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_msgData",
+          "type": "bytes"
+        }
+      ],
+      "name": "executeStepWithMessage",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "gas",
+          "type": "uint64"
+        },
+        {
+          "internalType": "bytes32[5]",
+          "name": "fields",
+          "type": "bytes32[5]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,76 @@
+{
+  "contractName": "ChallengeTester",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "challengeFactory_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "resolveChallenge",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "asserterAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address payable",
+          "name": "challengerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "challengerPeriodTicks",
+          "type": "uint128"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "challengerDataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "challengeType",
+          "type": "uint256"
+        }
+      ],
+      "name": "startChallenge",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516103413803806103418339818101604052602081101561003357600080fd5b8101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506102ad806100946000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063396f51cf1461003b5780638f43ee321461009f575b600080fd5b61009d6004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610133565b005b610131600480360360a08110156100b557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356fffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610137565b005b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663865da1c286868686866040518663ffffffff1660e01b8152600401808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001846fffffffffffffffffffffffffffffffff16815260200183815260200182815260200195505050505050602060405180830381600087803b15801561023557600080fd5b505af1158015610249573d6000803e3d6000fd5b505050506040513d602081101561025f57600080fd5b810190808051906020019092919050505050505050505056fea265627a7a7231582007aab9879a0dabc81e75034f3cc8e0661c4cf4ba4c7d04e2327b99fc215cdcf564736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063396f51cf1461003b5780638f43ee321461009f575b600080fd5b61009d6004803603604081101561005157600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610133565b005b610131600480360360a08110156100b557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080356fffffffffffffffffffffffffffffffff1690602001909291908035906020019092919080359060200190929190505050610137565b005b5050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663865da1c286868686866040518663ffffffff1660e01b8152600401808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001846fffffffffffffffffffffffffffffffff16815260200183815260200182815260200195505050505050602060405180830381600087803b15801561023557600080fd5b505af1158015610249573d6000803e3d6000fd5b505050506040513d602081101561025f57600080fd5b810190808051906020019092919050505050505050505056fea265627a7a7231582007aab9879a0dabc81e75034f3cc8e0661c4cf4ba4c7d04e2327b99fc215cdcf564736f6c63430005110032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
