@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "demo:initialize": "ts-node ./scripts/setup_validators_demo.ts init",
-    "prod:initialize": "ts-node ./scripts/setup_validators.ts init"
+    "prod:initialize": "ts-node ./scripts/setup_validators.ts init",
+    "rsk:initialize":"ts-node ./scripts/setup_valiadtors_rskTestnet.ts init"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.1",
