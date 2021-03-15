@@ -13,7 +13,6 @@ const rollupsPath = root + 'rollups/'
 
 
 //Web3 setting
-
 const mnemonicPhrase = "your 12 phrase mnemonic"
 let provider = new HDWalletProvider({
   mnemonic: {
@@ -58,11 +57,9 @@ async function initializeWallets(count: number): Promise<ethers.Wallet[]> {
       from: accounts[0]
     }
     var send = await web3.eth.sendTransaction(tx)
-    console.log(send)
     wallets.push(newWallet)
     // waits.push(send.wait())
   }
-  console.log("Hlello1")
   // await Promise.all(waits)
   return wallets
 }
@@ -112,12 +109,12 @@ async function setupValidators(
 
   const config = {
     rollup_address: rollup,
-    eth_url: 'https://public-node.testnet.rsk.co',
+    eth_url: 'https://testnet.sovryn.app/rpc',
     password: 'pass',
     blocktime: blocktime,
   }
 
-  await setupValidatorStates(count, 'local', config)
+  await setupValidatorStates(count, rollup, config)
 
   //await initializeClientWallets(rollup)
 }
