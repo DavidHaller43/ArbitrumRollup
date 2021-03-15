@@ -14,19 +14,19 @@ const rollupsPath = root + 'rollups/'
 
 //Web3 setting
 
-const mnemonicPhrase = "jeans toast bone embody tortoise trophy often amazing split into robust fortune"
+const mnemonicPhrase = "your 12 phrase mnemonic"
 let provider = new HDWalletProvider({
   mnemonic: {
     phrase: mnemonicPhrase
   },
-  providerOrUrl: "https://public-node.testnet.rsk.co"
+  providerOrUrl: "https://testnet.sovryn.app/rpc"
 });
 const web3 = new Web3(provider)
 
 async function setupRollup(arbOSData: string): Promise<string> {
   const arbOSHash = Program.programMachineHash(arbOSData)
   const accounts = await web3.eth.getAccounts()
-  const factoryAddress = "0x93a03ab275b6bfefe30804351d4034787e41d6ce";
+  const factoryAddress = "rollup_factory_address";
 
   const factory = await new web3.eth.Contract(ArbFactoryJson.abi, factoryAddress)
   console.log(`Initializing rollup chain for machine with hash ${arbOSHash}`)
