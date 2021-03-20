@@ -58,7 +58,7 @@ async function initializeWallets(count: number): Promise<ethers.Wallet[]> {
     }
     var send = await web3.eth.sendTransaction(tx)
     wallets.push(newWallet)
-    // waits.push(send.wait())
+    // waits.push(await send.wait())
   }
   // await Promise.all(waits)
   return wallets
