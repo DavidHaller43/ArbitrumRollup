@@ -9,17 +9,16 @@ const arbConversion = new ArbConversion()
 interface RollupCreatedParams {
   rollupAddress: string
 }
-const provider = new ethers.providers.JsonRpcProvider('https://ropsten.infura.io/v3/45662a3729fa43678d13b210e60dee48')
-const privateKey="a11ab8b453d1f35612fd573b266590a9825719c6015a7c3ee6fcea4cf66d70e7"
+const provider = new ethers.providers.JsonRpcProvider('rpc-node-url')
+const privateKey="Your_Private_key"
 let wallet = new ethers.Wallet(privateKey, provider);
-// const wallet = provider.getSigner(0)
 const root = '../../'
 const rollupsPath = root + 'rollups/'
 
 async function setupRollup(arbOSData: string): Promise<string> {
   const arbOSHash = Program.programMachineHash(arbOSData)
 
-  const factoryAddress = "0x777238a415B2832a52fC11120F060D569fCdC469"
+  const factoryAddress = "factory_address"
 
   const factory = abi.ArbFactoryFactory.connect(factoryAddress, wallet)
 
@@ -70,14 +69,11 @@ async function initializeWallets(count: number): Promise<ethers.Wallet[]> {
 async function initializeClientWallets(rollupAddress: string): Promise<void> {
   const addresses = [
     '0xc7711f36b2C13E00821fFD9EC54B04A60AEfbd1b',
-    '0x38299D74a169e68df4Da85Fb12c6Fd22246aDD9F',
-    '0xAf40F7D235A9786a420bb89B188910958fD7EF93',
-    '0xFcC598b3E3575CA937AF7F0E804a8BAb5E92a3f6',
-    '0x755449b9901f91deC52DB39AF8c655206C63eD8e',
+    '0x38299D74a169e68df4Da85Fb12c6Fd22246aDD9F'
   ]
 
   const bridge = new L1Bridge(wallet, rollupAddress)
-  const amount = ethers.utils.parseEther('.01')
+  const amount = ethers.utils.parseEther('.1')
 
   for (const address of addresses) {
     await bridge.depositETH(address, amount)
@@ -93,7 +89,7 @@ async function setupValidators(
   const rollup = await setupRollup(arbOSData)
   console.log('Created rollup', rollup)
 
-  const validatorsPath = rollupsPath + 'local/'
+  const validatorsPath = rollupsPath + `${rollup}/`
 
   if (count < 2) {
     throw Error('must create at least 1 validator')
@@ -115,12 +111,12 @@ async function setupValidators(
 
   const config = {
     rollup_address: rollup,
-    eth_url: 'https://ropsten.infura.io/v3/45662a3729fa43678d13b210e60dee48',
+    eth_url: 'rpc-node-url',
     password: 'pass',
     blocktime: blocktime,
   }
 
-  await setupValidatorStates(count, 'local', config)
+  await setupValidatorStates(count, rollup, config)
   const wallets = await initializeWallets(count)
   let i = 0
   for (const wallet of wallets) {
