@@ -46,7 +46,7 @@ module.exports = {
   defaultNetwork: 'buidlerevm',
   paths: {
     artifacts: 'build/contracts',
-  },
+  }, 
   solc: {
     version: '0.5.17',
     optimizer: {
@@ -78,29 +78,29 @@ module.exports = {
       url: 'http://127.0.0.1:7545',
     },
     rskTestnet: {
-      url: "https://public-node.testnet.rsk.co",
-      accounts: ["0xa11ab8b453d1f35612fd573b266590a9825719c6015a7c3ee6fcea4cf66d70e7"],
+      url: "https://testnet.sovryn.app/rpc",
+      accounts: ["Your_Private_Key"],
       network_id: 31,
-      confirmations: 6,
+      confirmations: 4,
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/45662a3729fa43678d13b210e60dee48",
-      accounts: ["0xa11ab8b453d1f35612fd573b266590a9825719c6015a7c3ee6fcea4cf66d70e7"],
+      url: "rpc-node-url",
+      accounts: ["Your_Private_Key"],
       network_id: 4,
       confirmations: 1,
     },
     ropsten: {
-      url: "https://ropsten.infura.io/v3/45662a3729fa43678d13b210e60dee48",
-      accounts: ["0xa11ab8b453d1f35612fd573b266590a9825719c6015a7c3ee6fcea4cf66d70e7"],
+      url: "rpc-node-url",
+      accounts: ["Your_Private_Key"],
       network_id: 3,
       confirmations: 1,
     },
     kovan: {
-      url: 'https://kovan.infura.io/v3/45662a3729fa43678d13b210e60dee48',
-      accounts: ["0xa11ab8b453d1f35612fd573b266590a9825719c6015a7c3ee6fcea4cf66d70e7"],
+      url: 'rpc-node-url',
+      accounts: ["Your_Private_Key"],
       network_id: 42,
       confirmations: 4,
-    },
+    }
   },
   etherscan: {
     apiKey: process.env['ETHERSCAN_API_KEY'],
