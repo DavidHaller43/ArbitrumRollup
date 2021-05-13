@@ -18,7 +18,7 @@ let provider = new HDWalletProvider({
   mnemonic: {
     phrase: mnemonicPhrase
   },
-  providerOrUrl: "https://testnet.sovryn.app/rpc"
+  providerOrUrl: "https://testnet.sovryn.app/rpc "
 });
 const web3 = new Web3(provider)
 
